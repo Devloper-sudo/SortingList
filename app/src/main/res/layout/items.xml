@@ -1,0 +1,56 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/colorAccent">
+
+
+            <!--<include layout="@layout/val_layout" />-->
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/layoutTop"
+            android:background="@android:color/white">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycelr_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+
+
+            <!--<include layout="@layout/val_layout" />-->
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/overlapImage"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_above="@id/layoutBottom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-20dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_launcher_background"
+            android:text="Overlapping" />
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
